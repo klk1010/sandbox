@@ -1,10 +1,12 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import { SamplePage } from './pages';
+import colors from './colors';
 
 const App = () => (
-  <div>
+  <ThemeProvider theme={colors}>
     <SamplePage />
-  </div>
+  </ThemeProvider>
 );
 
 export default App;
