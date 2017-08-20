@@ -1,10 +1,9 @@
 import React from 'react';
-import { Home } from './pages';
-import './App.css';
+import { SamplePage } from './pages';
 
 const App = () => (
-  <div className="App">
-    <Home />
+  <div>
+    <SamplePage />
   </div>
 );
 
