@@ -1,18 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import { PageContent, PrimaryHeader } from '../components';
+import { Header } from '../components';
+import HomeContent from './HomeContent';
 
-const LandingPage = styled.div`
-  margin: 0;
+const Home = styled.div`
+  width: 100%;
+  height: 100%;
 `;
 
 export class SamplePage extends React.Component {
   render() {
     return (
-      <LandingPage>
-        <PrimaryHeader>Header</PrimaryHeader>
-        <PageContent>Content</PageContent>
-      </LandingPage>
+      <Home>
+        <Header>National Park Service</Header>
+        <HomeContent />
+      </Home>
     )
   }
 }
