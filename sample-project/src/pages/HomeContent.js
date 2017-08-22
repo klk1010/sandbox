@@ -5,7 +5,7 @@ import { videos } from './stubbedData';
 
 const HomeContent = () => (
   <PageContent>
-    <SectionWithTitle secondary>
+    <SectionWithTitle title="Public Domain Videos" primary>
       {videos.map(video => (
         <VideoCard key={video.id} video={video}/>
       ))}

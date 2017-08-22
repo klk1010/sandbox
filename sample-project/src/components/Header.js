@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../theme';
-import themeHelper from '../themeHelper';
 
 const StyledHeader = styled.header`
   background-image: linear-gradient(to left top, ${theme.primary.lighten(0.8)}, ${theme.secondary});

@@ -6,7 +6,13 @@ const themeHelper = ({ ...props }) => {
     return theme.default;
   }
 
-  const specifier = Object.keys(colors).filter(color => Object.keys(props).includes(color));
+  const colorThemes = Object.keys(colors);
+  const propKeys = Object.keys(props);
+  
+  const specifier = colorThemes.filter(
+    theme => propKeys.includes(theme)
+  );
+
   if (!specifier) {
     return theme.default;
   }
