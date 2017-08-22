@@ -4,12 +4,6 @@ import styled from 'styled-components';
 import theme from '../theme';
 import themeHelper from '../themeHelper';
 
-const getHeaderHeight = props => {
-  const baseHeight = props.primary ? 2 : 1.5;
-  const expandedHeight = props.expand ? baseHeight + 4 : baseHeight;
-  return `${expandedHeight}rem`;
-};
-
 const StyledHeader = styled.header`
   background-image: linear-gradient(to left top, ${theme.primary.lighten(0.8)}, ${theme.secondary});
   color: white;
@@ -21,7 +15,7 @@ const StyledHeader = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  height: ${getHeaderHeight};
+  height: 1.5rem;
 `;
 
 const Header = ({ children, ...props }) => (

@@ -10,6 +10,7 @@ const Title = styled.h2`
 `;
 
 const Section = styled.section`
+  ma
   width: 100%;
   display: flex;
   flex-flow: row wrap;

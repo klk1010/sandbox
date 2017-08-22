@@ -10,6 +10,7 @@ const getCardLevel = props => {
 };
 
 const StyledCard = styled.div`
+  background-color: white;
   box-shadow: ${getCardLevel};
   margin: 0.25rem;
   height: ${props => props.height ? props.height : 'auto'};

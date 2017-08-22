@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Card, Video } from '../components';
 
 const VideoCard = ({ video }) => (
-  <Card title={video.title} stackLevel={2} height='20%' width='20%' primary>
+  <Card title={video.title} stackLevel={2} height='20%' width='20%'>
     <Video
       fileName={video.fileName}
       fileTypes={video.fileTypes}
